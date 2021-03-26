@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Marco Baez's Webpage</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+
+	<body>
+	<header>
+		<img class="logo "src="logo.png" alt="logo">
+		<nav>
+		<ul>
+			<li><a href="index.html"> <button>Home</button></a></li>
+			<li><a href="notes.html"> <button>Notes</button></a></li>
+			<li><a href="page2.html"> <button>About me</button></a></li>
+			<li><a href="page3.html"> <button>About this website</button></a></li>
+			<li><a href="page4.html"><button>Contact me</button></a></li>
+		</ul>
+		</nav>
+	</header>
+
+<!--	<div>
+	<img class="movie"src="https://highdefdiscnews.com/wp-content/uploads/2018/12/2001_a_space_odyssey_4k_01-1.png" alt="movie">
+	</div>-->
+
+<!--	<div class="row">
+		<div class="col">col1</div>
+		<div class="col">col2</div>
+		<div class="col">col3</div>
+	</div>
+
+
+	<div class="sub">
+		<div class="fh"> Who am I?<br></div>
+		<div class="sh">Who am I?<br></div>
+	</div>-->
+
+	<div class="float-container">
+
+  <div class="float-child">
+    <div class="green">Who am I?</div>
+  </div>
+
+  <div class="float-child3">
+    <div class="blue"></div>
+  </div>
+  
+  <div class="float-child2">
+    <div class="blue">What is this for?</div>
+  </div>
+</div>
+
+
+<div class="float-container">
+
+  <div class="float-child">
+    <div class="green">Hello, My name is Marco Baez Pulido. I am a current computer science student at the University of California, Riverside.</div>
+  </div>
+
+  <div class="float-child3">
+    <div class="blue"></div>
+  </div>
+  
+  <div class="float-child2">
+    <div class="blue">I chose to make this website as a way to show who I am, my interests and passions as well as to learn HTML and CSS as fast as I possibly could by just doing it and building a website. I hope you find this interesting. Thank you.</div>
+  </div>
+</div>
+
+<div class="split">
+	<div class=time>
+	<script type="text/javascript">
+		var dayvar = new Date();
+		var hours = dayvar.getHours();
+		var mins = dayvar.getMinutes();
+		if(mins<10){mins='0'+mins;}
+		var totaltime = hours+":"+mins;
+		document.write(totaltime);
+	</script>
+	</div>
+
+	<div class="temp">
+		<div class="intro">
+			Current temperature in Riverside, CA: <br>
+		</div>
+		<p>
+		<span id="tempid"></span>
+		</p>
+		<script>
+			//var temper;
+			const apiurl = 'https://api.openweathermap.org/data/2.5/weather?q=riverside&units=imperial&appid=9903b467d990dab45a13ee85577119db';
+			async function getTemp(){
+			const response = await fetch(apiurl);
+				const data = await response.json();
+				const temper = data.main.temp;
+				//temper.innerHTML();
+				document.getElementById('tempid').innerHTML=temper + "°F" ;
+				//console.log(data);
+			}
+
+				getTemp();
+				//console.log(data.main.temp);
+				//document.write(temper);
+		</script>
+	</div>
+
+</div>
+
+<!--	<div class="cont">
+	<div class = "text">
+		Hello, My name is Marco Baez Pulido. I am a current computer science student at the University of California, Riverside. 
+	</div>
+
+	<div class = "text2">
+		I chose to make this website as a way to show who I am, my interests and passions as well as to learn HTML and CSS as fast as I possibly could by just doing it and building a website. I hope you find this interesting. Thank you.
+	</div>
+	</div>-->
+
+	<footer>
+		2021 Marco Baez 
+	</footer>
+	</body>
+
+</html>

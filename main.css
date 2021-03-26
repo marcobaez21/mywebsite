@@ -1,0 +1,197 @@
+
+
+*{
+	box-sizing: border-box; 
+	margin: 0;
+	padding: 0;
+	/*background-color: #24252A*/
+	background-color: #BFBFBD
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1% 1%;
+}
+
+.logo{
+	width: 5%;
+	height: auto;
+}
+
+div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: center;
+}
+
+.movie{
+	padding: 50px;
+	width: 60%;
+	height: auto;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 0px 20px;
+
+
+}
+
+nav ul li a{
+	transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hoover{
+	color: red;
+}
+
+button{
+	padding: 9px 25px;
+	background-color: rgb(255, 51, 0); 
+	border: none;
+	border-radius: 50px;
+}
+
+footer{ 
+	text-align: right;
+}
+
+.sub{
+	width: 100%;
+	padding: 0px 50px 50px 50px;
+	background-color: black;
+}
+
+.fh{
+	width: 50%;
+	float: left;
+	background-color: red;
+}
+
+.sh{
+	margin-left: 50%;
+	align-items: left;
+	background-color: green;
+
+}
+
+
+.cont{
+	width: 100%;
+	padding: 0px 50px 50px 50px;
+}
+
+.text{
+/*	width: 50%;
+	float:left;*/
+}
+
+.text2{
+	margin-left: 50%;
+	align-items: left;
+}
+
+.float-container {
+    padding: 0px;
+    
+}
+
+.float-child {
+    width: 45%;
+    float: left;
+    padding: 0px;
+    border: none;
+    border-radius: 25px
+}  
+
+
+.float-child3 {
+    width: 10%;
+    float: left;
+    padding: 0px;
+    border: none;
+    border-radius: 25px
+}  
+
+
+
+.float-child2 {
+    width: 45%;
+    float: left;
+    padding: 0px;
+    border: none;
+    border-radius: 25px
+}  
+
+.piccontainer {
+    padding: 0px;
+    
+}
+
+.picchild {
+    width: 45%;
+    height: auto;
+}  
+
+
+.picchild3 {
+    width: 5%;
+}  
+
+
+
+.picchild2 {
+    width: 45%;
+    height: auto;
+}
+
+.mypic{
+	padding-top: 50px;
+	width: 65%;
+	height: auto;
+}
+
+.ucrpic{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 65%;
+	height: auto;
+}
+
+.split{
+	padding: 50px;
+}
+
+.time{
+	width: 50%;
+	float: left;
+	font: times new roman;
+	font-size: 150px;
+	color: white;
+}
+
+.intro{
+	font-size: 25px;
+}
+
+.temp{
+	width: 50%;
+	float: left;
+	font: times new roman;
+	font-size: 150px;
+	color: white;
+}
+/*.text{
+	color: white;
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	align-items: center;
+
+}
