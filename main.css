@@ -59,6 +59,9 @@ button{
 }
 
 footer{ 
+	position: fixed;
+	bottom:0;
+	right: 0;
 	text-align: right;
 }
 
@@ -173,7 +176,7 @@ footer{
 	float: left;
 	font: times new roman;
 	font-size: 150px;
-	color: white;
+	color: black;
 }
 
 .intro{
@@ -185,7 +188,40 @@ footer{
 	float: left;
 	font: times new roman;
 	font-size: 150px;
-	color: white;
+	color: black;
+}
+
+.topcontact{
+	font-size: 150px;
+	padding: 25px;
+}
+
+.covidtitle{
+	padding-top: 50px;
+	font-size: 50px;
+	color: black;
+}
+
+.covid{
+	font-size: 150px;
+}
+
+.aboutweb{
+	text-align: center;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: 25px;
+	font: times new roman;
+}
+
+.gitlink{
+		text-align: center;
+	padding-top: 200px;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: 25px;
+	font: times new roman;
 }
 /*.text{
 	color: white;

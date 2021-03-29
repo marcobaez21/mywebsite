@@ -19,42 +19,10 @@
 		</nav>
 	</header>
 
-<!--	<div>
-	<img class="movie"src="https://highdefdiscnews.com/wp-content/uploads/2018/12/2001_a_space_odyssey_4k_01-1.png" alt="movie">
-	</div>-->
-
-<!--	<div class="row">
-		<div class="col">col1</div>
-		<div class="col">col2</div>
-		<div class="col">col3</div>
-	</div>
-
-
-	<div class="sub">
-		<div class="fh"> Who am I?<br></div>
-		<div class="sh">Who am I?<br></div>
-	</div>-->
-
-	<div class="float-container">
-
-  <div class="float-child">
-    <div class="green">Who am I?</div>
-  </div>
-
-  <div class="float-child3">
-    <div class="blue"></div>
-  </div>
-  
-  <div class="float-child2">
-    <div class="blue">What is this for?</div>
-  </div>
-</div>
-
-
 <div class="float-container">
 
   <div class="float-child">
-    <div class="green">Hello, My name is Marco Baez Pulido. I am a current computer science student at the University of California, Riverside.</div>
+    <div class="green">Current time in Riverside: </div>
   </div>
 
   <div class="float-child3">
@@ -62,7 +30,7 @@
   </div>
   
   <div class="float-child2">
-    <div class="blue">I chose to make this website as a way to show who I am, my interests and passions as well as to learn HTML and CSS as fast as I possibly could by just doing it and building a website. I hope you find this interesting. Thank you.</div>
+    <div class="blue">Current temperature in Riverside: </div>
   </div>
 </div>
 
@@ -80,7 +48,6 @@
 
 	<div class="temp">
 		<div class="intro">
-			Current temperature in Riverside, CA: <br>
 		</div>
 		<p>
 		<span id="tempid"></span>
@@ -92,28 +59,35 @@
 			const response = await fetch(apiurl);
 				const data = await response.json();
 				const temper = data.main.temp;
-				//temper.innerHTML();
 				document.getElementById('tempid').innerHTML=temper + "°F" ;
 				//console.log(data);
 			}
 
 				getTemp();
-				//console.log(data.main.temp);
-				//document.write(temper);
 		</script>
 	</div>
-
 </div>
 
-<!--	<div class="cont">
-	<div class = "text">
-		Hello, My name is Marco Baez Pulido. I am a current computer science student at the University of California, Riverside. 
-	</div>
+<div class="covidtitle">
+	Total number of people fully vaccinated in the United States:
+</div>
 
-	<div class = "text2">
-		I chose to make this website as a way to show who I am, my interests and passions as well as to learn HTML and CSS as fast as I possibly could by just doing it and building a website. I hope you find this interesting. Thank you.
-	</div>
-	</div>-->
+<div class="covid">
+	<p>
+		<span id="covidid"></span>
+	</p>
+	<script type="text/javascript">
+		const covidurl = 'https://covid-api.mmediagroup.fr/v1/vaccines?country=United%20States';
+		async function getVaccines(){
+			const response = await fetch(covidurl);
+			const coviddata = await response.json();
+			const tempcovid = coviddata.All.people_vaccinated;
+			document.getElementById('covidid').innerHTML=tempcovid.toLocaleString();
+			//console.log(coviddata);
+		}
+		getVaccines();
+	</script>
+</div>
 
 	<footer>
 		2021 Marco Baez 
